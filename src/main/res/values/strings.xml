@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Math Tutor</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_practice_button">Practice</string>
+    <string name="main_quiz_button">Quiz</string>
+    <string name="test_button">Test</string>
+    <string name="main_endurance_button">Endurance</string>
+    <string name="answer_ET_hint">TAP!</string>
+    <string name="check_btn">Check</string>
+    <string name="home_btn">Home</string>
+
+    <string name="add_operator">+</string>
+    <string name="sub_operator">-</string>
+    <string name="multiplication_operator">x</string>
+    <string name="division_operator">÷</string>
+
+    <string name="equals">=</string>
+    <string name="begin">Begin</string>
+    <string name="select_math_type">Select Math Type</string>
+    <string name="select_difficulty">Select Difficulty</string>
+    <string name="select_time_limit">Select Time Limit</string>
+    <string name="select_num_of_questions">Select Number of Questions</string>
+    <string name="time_up">Quiz over!</string>
+    <string name="submit">Submit</string>
+    <string name="score">Score</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="prac_title1">Press Begin to start your Practice Session!</string>
+    <string name="prac_title2">Solve the equation.</string>
+    <string name="quiz_title1">Press Begin to start your Quiz!</string>
+    <string name="quiz_title2">Solve the equations within the chosen time limit. Click the Submit button once you have your answer.</string>
+    <string name="quiz_title4">Good luck!</string>
+    <string name="quiz_title3">Press Score button to view your results.</string>
+    <string name="prac_continue">Continue!</string>
+    <string name="prac_tryAgain">Try again.</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="test_first_prompt">Press Begin to start your Test!</string>
+    <string name="test_second_prompt">The test is cumulative. Solve the 25 equations within the time limit. Click the Submit button once you have your answer. </string>
+    <string name="test_third_prompt">Test over!</string>
+
+    <string name="endurance_time_button">Go For Time</string>
+    <string name="endurance_score_button">Go For Score</string>
+    <string name="endurance_end_button">Quit</string>
+    <string name="endurance_time_prompt">Solve the equations in the fastest time.</string>
+    <string name="endurance_score_prompt">Get the best score in the given time limit.</string>
+
+    <string name="score_title">Score: %1$s/%2$s</string>
+    <string name="question_label">Question #</string>
+    <string name="result_label">Result</string>
+    <string name="button_col_label">Go To..</string>
+    <string name="go">Go!</string>
+    <string name="num_label_1">1</string>
+    <string name="num_label_2">2</string>
+    <string name="num_label_3">3</string>
+    <string name="num_label_4">4</string>
+    <string name="num_label_5">5</string>
+    <string name="num_label_6">6</string>
+    <string name="num_label_7">7</string>
+    <string name="num_label_8">8</string>
+    <string name="num_label_9">9</string>
+    <string name="num_label_10">10</string>
+    <string name="num_label_11">11</string>
+    <string name="num_label_12">12</string>
+    <string name="num_label_13">13</string>
+    <string name="num_label_14">14</string>
+    <string name="num_label_15">15</string>
+    <string name="s_reattempt_btn">Retry</string>
+    <string name="s_answer_btn">See Answer</string>
+    <string name="show_answer_TV">Answer: </string>
+    <string name="back_to_score_button">Back</string>
+    <string name="back_to_setup">Setup</string>
+
+    <string name="register_button">Register</string>
+    <string name="reg_name">Name</string>
+    <string name="reg_username">Username</string>
+    <string name="reg_password">Password</string>
+
+    <string name="login_button">Login</string>
+    <string name="login_register_TV">Register Here</string>
+
+    <string-array name="math_types">
+        <item>Addition (+)</item>
+        <item>Subtraction (-)</item>
+        <item>Multiplication (x)</item>
+        <item>Division (÷)</item>
+    </string-array>
+    <string-array name="difficulty_types">
+        <item>Beginner (Default : 1 : 10)</item>
+        <item>Intermediate (1 : 50)</item>
+        <item>Advanced (1 : 100)</item>
+    </string-array>
+    <string-array name="time_limits">
+        <item>Default (2:00)</item>
+        <item>Speedy (1:30)</item>
+        <item>Lightning (0:30)</item>
+    </string-array>
+    <string-array name="num_questions">
+        <item>5 (Default)</item>
+        <item>10 (Skills)</item>
+        <item>15 (Champion)</item>
+    </string-array>
+
+</resources>
