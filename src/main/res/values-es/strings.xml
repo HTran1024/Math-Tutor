@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tutor de Matemáticas</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="main_practice_button">Práctica</string>
+    <string name="main_quiz_button">Prueba</string>
+    <string name="test_button">Examen</string>
+    <string name="main_endurance_button">Resistencia</string>
+    <string name="answer_ET_hint">¡TAP!</string>
+    <string name="check_btn">Comprobar</string>
+    <string name="home_btn">Regresa</string>
+
+    <string name="add_operator">+</string>
+    <string name="sub_operator">-</string>
+    <string name="multiplication_operator">x</string>
+    <string name="division_operator">÷</string>
+
+    <string name="equals">=</string>
+    <string name="begin">Empezar</string>
+    <string name="select_math_type">Seleccione de Matemáticas</string>
+    <string name="select_difficulty">Seleccione de Dificultad</string>
+    <string name="select_time_limit">Seleccionar Límite de Tiempo</string>
+    <string name="select_num_of_questions">Seleccione el Número de Preguntas</string>
+    <string name="time_up">¡El curso ya terminó!</string>
+    <string name="submit">Enviar</string>
+    <string name="score">Puntuación</string>
+    <string name="correct">¡Correcto!!</string>
+    <string name="incorrect">Incorrecto</string>
+    <string name="prac_title1">¡Presione Empezar para comenzar su Sesión de Práctica!</string>
+    <string name="prac_title2">Resuelve la ecuación.</string>
+    <string name="quiz_title1">¡Presione Empezar a comenzar su prueba!</string>
+    <string name="quiz_title2">Resolver las ecuaciones dentro del límite de tiempo elegido. Haga clic en el botón Enviar una vez que tenga su respuesta.</string>
+    <string name="quiz_title4">¡Buena suerte!</string>
+    <string name="quiz_title3">Presiona Puntuación para ver tus resultados.</string>
+    <string name="prac_continue">¡Continuar!</string>
+    <string name="prac_tryAgain">Inténtalo de nuevo.</string>
+    <string name="confirm">Confirmar</string>
+
+    <string name="test_first_prompt">¡Presione Empezar a comenzar su examen!</string>
+    <string name="test_second_prompt">The test is cumulative. Solve the equations within the chosen time limit. Click the Submit button once you have your answer. </string>
+    <string name="test_third_prompt">¡El curso ya terminó!</string>
+
+    <string name="endurance_time_button">Go For Time</string>
+    <string name="endurance_score_button">Go For Score</string>
+    <string name="endurance_end_button">Terminar</string>
+    <string name="endurance_time_prompt">Solve the equations in the fastest time.</string>
+    <string name="endurance_score_prompt">Get the best score in the given time limit.</string>
+
+    <string name="score_title">Puntuación: %1$s/%2$s</string>
+    <string name="question_label">Pregunta #</string>
+    <string name="result_label">Resultado</string>
+    <string name="button_col_label">Ir..</string>
+    <string name="go">¡Ir!</string>
+    <string name="num_label_1">1</string>
+    <string name="num_label_2">2</string>
+    <string name="num_label_3">3</string>
+    <string name="num_label_4">4</string>
+    <string name="num_label_5">5</string>
+    <string name="num_label_6">6</string>
+    <string name="num_label_7">7</string>
+    <string name="num_label_8">8</string>
+    <string name="num_label_9">9</string>
+    <string name="num_label_10">10</string>
+    <string name="num_label_11">11</string>
+    <string name="num_label_12">12</string>
+    <string name="num_label_13">13</string>
+    <string name="num_label_14">14</string>
+    <string name="num_label_15">15</string>
+    <string name="s_reattempt_btn">Rever</string>
+    <string name="s_answer_btn">Ver Respuesta</string>
+    <string name="show_answer_TV">Responder: </string>
+    <string name="back_to_score_button">Regresa</string>
+    <string name="back_to_setup">Preparar</string>
+
+    <string name="register_button">Registrar</string>
+    <string name="reg_name">Nombre</string>
+    <string name="reg_username">Nombre</string>
+    <string name="reg_password">Contraseña</string>
+
+    <string name="login_button">Iniciar</string>
+    <string name="login_register_TV">Registrar Aquí</string>
+
+    <string-array name="math_types">
+        <item>Adición (+)</item>
+        <item>Sustracción (-)</item>
+        <item>Multiplicación (x)</item>
+        <item>División (÷)</item>
+    </string-array>
+    <string-array name="difficulty_types">
+        <item>Principiante (Defecto : 1 : 10)</item>
+        <item>Intermedio (1 : 50)</item>
+        <item>Avanzado (1 : 100)</item>
+    </string-array>
+    <string-array name="time_limits">
+        <item>Defecto (2:00)</item>
+        <item>Rápido (1:30)</item>
+        <item>Relámpago (0:30)</item>
+    </string-array>
+    <string-array name="num_questions">
+        <item>5 (Defecto)</item>
+        <item>10 (Habilidades)</item>
+        <item>15 (Campeón)</item>
+    </string-array>
+
+</resources>
