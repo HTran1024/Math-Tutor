@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.stephencordasco.mathtutor.RetryActivity"
+    android:background="@android:color/holo_orange_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/score_goBack_btn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/back_to_score_button"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/score2_title_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/score_goBack_btn"
+            android:layout_toEndOf="@id/score_goBack_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/prac_title2"
+            android:textColor="@android:color/black"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:id="@+id/score_retry_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/s_reattempt_btn"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/score_check_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/check_btn"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/answer_btn_layout"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" >
+
+        <Button
+            android:id="@+id/score_answer_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/s_answer_btn"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/show_answer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/answer_btn_layout"
+        android:layout_marginBottom="35dp" >
+
+        <TextView
+            android:id="@+id/see_answer_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/show_answer_TV"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/correct_answer_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/see_answer_TV"
+            android:layout_toEndOf="@id/see_answer_TV"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/score2_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/show_answer_layout"
+        android:layout_marginBottom="15dp" >
+
+        <TextView
+            android:id="@+id/score2_correct_incorrect_TV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@id/score2_result_layout"
+        android:layout_marginBottom="15dp" >
+
+        <TextView
+            android:id="@+id/score_first_num_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/score_operation_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/score_first_num_TV"
+            android:layout_toEndOf="@id/score_first_num_TV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/add_operator"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/score_second_num_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/score_operation_TV"
+            android:layout_toEndOf="@id/score_operation_TV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/score_equals_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/score_second_num_TV"
+            android:layout_toEndOf="@id/score_second_num_TV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/equals"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <EditText
+            android:id="@+id/score_answer_field_ET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/score_equals_TV"
+            android:layout_toEndOf="@id/score_equals_TV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="@string/answer_ET_hint"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="84sp"
+            android:inputType="number" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

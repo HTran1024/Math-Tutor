@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/math_tutor_bg"
+    tools:context="com.example.stephencordasco.mathtutor.EnduranceActivity">
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chrono"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/endurance_home_btn_layout"
+        android:layout_width="150dp"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/endurance_home_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/home_btn"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/endurance_end_button_layout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/endurance_home_btn_layout"
+        android:layout_toEndOf="@+id/endurance_home_btn_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="15dp" >
+
+        <Button
+            android:id="@+id/endurance_end_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/endurance_end_button"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/endurance_timer_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/endurance_score_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endurance_timer_TV"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/endurance_time_prompt_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="@string/endurance_time_prompt"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/endurance_time_button_layout"
+        android:layout_width="450dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp" >
+
+        <Button
+            android:id="@+id/endurance_time_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="goForTime"
+            android:background="@drawable/other_button"
+            android:text="@string/endurance_time_button"
+            android:textColor="@android:color/black"
+            android:textSize="56sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/endurance_score_prompt_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endurance_time_button_layout"
+        android:layout_marginTop="100dp"
+        android:text="@string/endurance_score_prompt"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/endurance_score_button_layout"
+        android:layout_width="450dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/endurance_time_button_layout"
+        android:layout_marginTop="150dp" >
+
+        <Button
+            android:id="@+id/endurance_score_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="goForScore"
+            android:background="@drawable/other_button"
+            android:text="@string/endurance_score_button"
+            android:textColor="@android:color/black"
+            android:textSize="56sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/e_submit_btn_layout"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:id="@+id/endurance_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="submit"
+            android:background="@drawable/other_button"
+            android:text="@string/submit"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/endurance_equation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/e_submit_btn_layout"
+        android:layout_marginBottom="175dp" >
+
+        <TextView
+            android:id="@+id/endurance_first_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/endurance_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/endurance_first_num"
+            android:layout_toEndOf="@id/endurance_first_num"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/endurance_second_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/endurance_operation"
+            android:layout_toEndOf="@id/endurance_operation"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/endurance_equals_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/endurance_second_num"
+            android:layout_toEndOf="@id/endurance_second_num"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/equals"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <EditText
+            android:id="@+id/endurance_user_answer_ET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/endurance_equals_bar"
+            android:layout_toEndOf="@id/endurance_equals_bar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="@string/answer_ET_hint"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="84sp"
+            android:inputType="number"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

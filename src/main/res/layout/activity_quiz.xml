@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.stephencordasco.mathtutor.QuizActivity"
+    android:background="@drawable/math_tutor_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/begin_quiz_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/begin"
+            android:textColor="@android:color/black"
+            android:textSize="100sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/quizTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/quiz_home_btn_layout"
+        android:layout_width="150dp"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/homeBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/home_btn"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:id="@+id/submit_btn_layout"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <Button
+            android:id="@+id/quiz_submit_answer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/submit"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/score_btn_layout"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" >
+
+        <Button
+            android:id="@+id/quiz_show_score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/other_button"
+            android:text="@string/score"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/quiz_equation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@id/submit_btn_layout"
+        android:layout_marginBottom="175dp" >
+
+        <TextView
+            android:id="@+id/quiz_first_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/quiz_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/quiz_first_num"
+            android:layout_toEndOf="@id/quiz_first_num"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/quiz_second_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/quiz_operation"
+            android:layout_toEndOf="@id/quiz_operation"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <TextView
+            android:id="@+id/quiz_equals_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/quiz_second_num"
+            android:layout_toEndOf="@id/quiz_second_num"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/equals"
+            android:textColor="@android:color/black"
+            android:textSize="84sp" />
+
+        <EditText
+            android:id="@+id/quiz_user_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/quiz_equals_bar"
+            android:layout_toEndOf="@id/quiz_equals_bar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="@string/answer_ET_hint"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="84sp"
+            android:inputType="number"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
